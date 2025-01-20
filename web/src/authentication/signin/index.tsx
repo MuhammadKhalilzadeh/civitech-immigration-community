@@ -48,6 +48,14 @@ const Signin = () => {
           size="small"
           sx={{ textTransform: "initial" }}
         >
+          Forgot password?
+        </Button>
+        <Button
+          variant="text"
+          color="primary"
+          size="small"
+          sx={{ textTransform: "initial" }}
+        >
           I don't have an account
         </Button>
       </Stack>
