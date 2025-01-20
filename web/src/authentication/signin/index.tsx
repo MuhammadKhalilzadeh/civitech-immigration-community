@@ -1,7 +1,10 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Button } from "@mui/material";
+
 import Textfield from "../../components/textfield";
 
-const Signup = () => {
+import { Stack, Typography } from "@mui/material";
+
+const Signin = () => {
   const centering = {
     display: "flex",
     flexDirection: "column",
@@ -32,19 +35,12 @@ const Signup = () => {
             marginY: 2,
           }}
         >
-          Create your admin account
+          Sign in to your account
         </Typography>
-        <Textfield label="Name" size="small" placeholder="Enter your name" />
-        <Textfield
-          label="Surname"
-          size="small"
-          placeholder="Enter your surname"
-        />
         <Textfield label="Email" size="small" placeholder="Enter your email" />
-        <Textfield label="Phone" size="small" placeholder="Enter your phone" />
         <Textfield label="Password" size="small" placeholder="Set a password" />
         <Button variant="contained" color="primary" size="small" sx={{ mt: 2 }}>
-          Sign up
+          Sign in
         </Button>
         <Button
           variant="text"
@@ -52,11 +48,19 @@ const Signup = () => {
           size="small"
           sx={{ textTransform: "initial" }}
         >
-          I already have an account
+          Forgot password?
+        </Button>
+        <Button
+          variant="text"
+          color="primary"
+          size="small"
+          sx={{ textTransform: "initial" }}
+        >
+          I don't have an account
         </Button>
       </Stack>
     </Stack>
   );
 };
 
-export default Signup;
+export default Signin;
